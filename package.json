@@ -9,16 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroui/react": "^2.7.8",
+    "@heroui/spinner": "^2.2.16",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "next": "15.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.1"
+    "react-icons": "^5.5.0",
+    "react-spinners": "^0.17.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tailwindcss/postcss": "^4",
+    "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

@@ -1,0 +1,62 @@
+/* src/components/Loader.module.css */
+.loaderContainer {
+  height: 100vh;
+  width: 100%;
+  background-color: #111827; /* Fundo escuro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 49999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.logoCircle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 4px solid #16B9A5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 1s infinite ease-in-out;
+  background-color: #122931;
+  box-shadow: 0 0 15px #16B9A5;
+}
+
+.logoText {
+  font-family: 'Orbitron', sans-serif;
+  color: #16B9A5;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 15px #16B9A5;
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #16B9A5;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 15px #16B9A5;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

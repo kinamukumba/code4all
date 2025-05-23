@@ -1,0 +1,74 @@
+.wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+}
+
+.track {
+  display: flex;
+  gap: .5%;
+  overflow: hidden;
+  animation: scroll-x linear infinite;
+}
+.item {
+  width: 400px;
+  height: 200px;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--fundo-card);
+}
+.id {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 5%;
+}
+.span {
+  display: flex;
+  flex-direction: column;
+}
+.span > :first-child {
+  font-weight: 700;
+  font-size: 15px;
+}
+.span > :last-child {
+  font-size: 12px;
+}
+
+.p {
+  text-align: start;
+  font-size: 13px;
+  width: 350px;
+  min-height: 100px;
+  color: red;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2%;
+
+  svg {
+    color: #d7be03;
+  }
+}
+@keyframes scroll-x {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pausar animação ao passar o mouse */
+.paused .track {
+  animation-play-state: paused;
+}

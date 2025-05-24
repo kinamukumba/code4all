@@ -219,7 +219,7 @@ export default function Home() {
             </div>
           </section>
         </div>
-        <div className="flex us center" id="feed">
+        <div className="flex us center feed" id="feed">
           <span className="post">Histórico</span>
           <h2>Olhe o que as pessoas falam de nós, <i>Code4all!</i></h2>
           <section className="feedback-wrapper" id='feedbackWrapper'>

@@ -91,7 +91,6 @@ body {
   font-family: var(--font-orbitron);
   background-color: var(--bcg-dark);
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 /*HEADER*/
@@ -100,7 +99,7 @@ header {
   top: 0;
   left: 0;
   z-index: 40000;
-  width: 90%;
+  width: 100%;
   height: auto;
   padding: 10px 5%;
   display: flex;
@@ -638,6 +637,14 @@ header>:last-child{
   em {
     color: var(--bcg-red-dark);
   }
+}
+/*FEEDBACK*/
+.flex.feed{
+  padding: 50px 0%;
+}
+.feedback-wrapper{
+  width: 100%;
+  overflow: hidden;
 }
 
 /*COMMUNITY*/

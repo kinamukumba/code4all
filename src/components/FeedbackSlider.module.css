@@ -1,5 +1,4 @@
 .wrapper {
-  overflow: hidden;
   white-space: nowrap;
   width: 100%;
   background-color: transparent;
@@ -9,11 +8,11 @@
 .track {
   display: flex;
   gap: .5%;
-  overflow: hidden;
   animation: scroll-x linear infinite;
 }
 .item {
-  width: 400px;
+  min-width: 400px;
+  width: 500px;
   height: 200px;
   border-radius: 5px;
   padding: 20px;

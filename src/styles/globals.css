@@ -1214,6 +1214,25 @@ form.contact button{
     }
   }
 }
+@media(max-width: 900px){
+  .container-loin {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0;
+  }
+  .container-loin .form{
+    width: 70%;
+  }
+}
+@media(max-width: 700px){
+  .container-loin .form{
+    width: 90%;
+  }
+}
+
 
 /*FOOTER*/
 footer {
@@ -1403,7 +1422,7 @@ footer em {
 }
 
 
-@media(max-width: 500px){
+@media(max-width: 700px){
   footer .section-footer{
     flex-direction: column;
   }

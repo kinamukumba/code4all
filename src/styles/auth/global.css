@@ -1,0 +1,94 @@
+@import "tailwindcss";
+/* Esconde o overlay da Next.js DevTool */
+.nextjs-portal {
+  display: none !important;
+}
+
+:root {
+  /*font*/
+  --font-orbitron: "Orbitron", sans-serif;
+  /* Cores principais */
+  --green: #145331;
+
+  /* Backgrounds escuros */
+  --bcg-dark: #111827;
+  --bcg-green-dark: #16b9a5;
+  --bcg-green-darker: #0d2423;
+
+  --bcg-blue-dark: #1a3790;
+  --bcg-blue-darker: #101c42;
+
+  --bcg-orange-dark: #6b4012;
+  --bcg-orange-darker: #2a1e1a;
+
+  --bcg-pink-dark: #571d8b;
+  --bcg-pink-darker: #241341;
+
+  --bcg-red-dark: #601639;
+  --bcg-red-darker: #2f1129;
+
+  /* Fundos */
+  --fundo-letras: #122931;
+  --fundo-card: #172131;
+
+  /*cores global*/
+  --white: #ffffff;
+  --black: #000000;
+}
+@font-face {
+  font-family: "Orbitron";
+  src: url("/src/assets/fonts/Orbitron-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+::placeholder {
+  color: #1d2e44;
+  font-size: 13px;
+}
+::-webkit-scrollbar {
+  background: transparent;
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bcg-green-dark);
+  border-radius: 5px;
+}
+
+p,
+li,
+em,
+i,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div,
+button {
+  color: var(--white);
+}
+
+p {
+  text-align: center;
+  width: 70%;
+}
+input {
+  font-size: 12px;
+}
+
+* {
+  font-family: var(--font-orbitron);
+  transition: all 1s;
+  text-transform: none;
+  font-style: normal;
+  outline: none;
+}
+body {
+  font-family: var(--font-orbitron);
+  background-color: var(--bcg-dark);
+  scroll-behavior: smooth;
+}

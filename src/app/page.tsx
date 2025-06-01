@@ -28,7 +28,7 @@ export default function Home() {
       <main>
         <div className="flex hero" id="hero">
           <div className="container-bcg">
-            <h1 className="" data-aos="fade-up"><strong>Pensar</strong> sem Limite!</h1>
+            <h1 className="" data-aos="fade-up">Lidere o futuro do desenvolvimento<strong>com JAVASCRIPT</strong></h1>
             <p className='' data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nesciunt odio voluptas corrupti neque exercitationem cumque eius totam maxime fugiat nobis, modi delectus mollitia tempore debitis in iste commodi ad.</p>
             <Link className="btnStart " data-aos="fade-up" href="/login">
               <button><DiCodeigniter /> Comece a sua <i>Jornada.js</i></button>

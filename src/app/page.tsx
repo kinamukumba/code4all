@@ -42,7 +42,7 @@ export default function Home() {
           <section className="section-difference" data-aos="fade-up">
             <div className="diff">
               <span className="center">
-                <MdComputer color="#145331" />
+                <MdComputer color="#0c8645" />
               </span>
               <h3>XXXXXXXXXXXXXX</h3>
               <p>
@@ -223,7 +223,10 @@ export default function Home() {
           <span className="post">Histórico</span>
           <h2>Olhe o que as pessoas falam de nós, <i>Code4all!</i></h2>
           <section className="feedback-wrapper" id='feedbackWrapper'>
-            <FeedbackSlider />
+            <FeedbackSlider classA='normal'/>
+          </section>
+          <section className="feedback-wrapper" id='feedbackWrapper'>
+            <FeedbackSlider classA='reverse' />
           </section>
         </div>
         <div className="flex us center" id="community">

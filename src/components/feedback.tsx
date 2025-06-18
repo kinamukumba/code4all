@@ -6,7 +6,7 @@ import { FcStart } from 'react-icons/fc';
 import { FaStarHalf } from 'react-icons/fa';
 import { FaStar } from 'react-icons/fa6';
 
-const FeedbackSlider = () => {
+const FeedbackSlider = ({classA}:{classA:string}) => {
     const wrapperRef = useRef<HTMLDivElement>(null);
     const trackRef = useRef<HTMLDivElement>(null);
 
@@ -43,14 +43,14 @@ const FeedbackSlider = () => {
 
     return (
         <div className={styles.wrapper} ref={wrapperRef}>
-            <div className={styles.track} ref={trackRef}>
+            <div className={styles.track + ' ' + classA} ref={trackRef}>
                 <div className={styles.item}>
                     <div className={styles.id}>
                         <Image
                             src="/user02.jpeg"
                             alt="Foto do Perfil"
-                            width={40}
-                            height={40}
+                            width={50}
+                            height={50}
                             className="rounded-full border-1 border-solid border-gray-300 shadow-lg transition-all duration-300 hover:scale-105"
                         />
                         <span className={styles.span}>
@@ -71,8 +71,8 @@ const FeedbackSlider = () => {
                         <Image
                             src="/user02.jpeg"
                             alt="Foto do Perfil"
-                            width={40}
-                            height={40}
+                            width={50}
+                            height={50}
                             className="rounded-full border-1 border-solid border-gray-300 shadow-lg transition-all duration-300 hover:scale-105"
                         />
                         <span className={styles.span}>
@@ -93,8 +93,8 @@ const FeedbackSlider = () => {
                         <Image
                             src="/user02.jpeg"
                             alt="Foto do Perfil"
-                            width={40}
-                            height={40}
+                            width={50}
+                            height={50}
                             className="rounded-full border-1 border-solid border-gray-300 shadow-lg transition-all duration-300 hover:scale-105"
                         />
                         <span className={styles.span}>
@@ -115,8 +115,8 @@ const FeedbackSlider = () => {
                         <Image
                             src="/user02.jpeg"
                             alt="Foto do Perfil"
-                            width={40}
-                            height={40}
+                            width={50}
+                            height={50}
                             className="rounded-full border-1 border-solid border-gray-300 shadow-lg transition-all duration-300 hover:scale-105"
                         />
                         <span className={styles.span}>
@@ -137,8 +137,8 @@ const FeedbackSlider = () => {
                         <Image
                             src="/user02.jpeg"
                             alt="Foto do Perfil"
-                            width={40}
-                            height={40}
+                            width={50}
+                            height={50}
                             className="rounded-full border-1 border-solid border-gray-300 shadow-lg transition-all duration-300 hover:scale-105"
                         />
                         <span className={styles.span}>

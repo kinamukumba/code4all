@@ -10,15 +10,19 @@
   gap: .5%;
   animation: scroll-x linear infinite;
 }
+.reverse{
+    animation: scroll-x-r linear infinite;
+}
 .item {
   min-width: 400px;
   width: 500px;
-  height: 200px;
+  height: auto;
   border-radius: 5px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   background-color: var(--fundo-card);
+  margin: 0 0 1% 0;
 }
 .id {
   display: flex;
@@ -33,10 +37,10 @@
 }
 .span > :first-child {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 20px;
 }
 .span > :last-child {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .p {
@@ -64,6 +68,15 @@
 
   100% {
     transform: translateX(-50%);
+  }
+}
+@keyframes scroll-x-r {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
   }
 }
 

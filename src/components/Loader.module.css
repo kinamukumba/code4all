@@ -17,18 +17,15 @@
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  border: 4px solid #16B9A5;
   display: flex;
   align-items: center;
   justify-content: center;
   animation: pulse 1s infinite ease-in-out;
-  background-color: #122931;
-  box-shadow: 0 0 15px #16B9A5;
 }
 
 .logoText {
-  font-family: 'Orbitron', sans-serif;
-  color: #16B9A5;
+  font-family: 'Alumni_Sans', sans-serif;
+  color: #0c8645;
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
@@ -38,15 +35,12 @@
 @keyframes pulse {
   0% {
     transform: scale(1);
-    box-shadow: 0 0 15px #16B9A5;
   }
   50% {
     transform: scale(1.1);
-    box-shadow: 0 0 25px #16B9A5;
   }
   100% {
     transform: scale(1);
-    box-shadow: 0 0 15px #16B9A5;
   }
 }
 

@@ -6,13 +6,13 @@
 
 :root {
   /*font*/
-  --font-orbitron: "Orbitron", sans-serif;
+  --font-Alumni_Sans: "Alumni_Sans", sans-serif;
   /* Cores principais */
-  --green: #145331;
+  --green: #0c8645;
 
   /* Backgrounds escuros */
   --bcg-dark: #111827;
-  --bcg-green-dark: #16b9a5;
+  --bcg-green-dark: #099c09;/*#16b9a5*/
   --bcg-green-darker: #0d2423;
 
   --bcg-blue-dark: #1a3790;
@@ -36,14 +36,14 @@
   --black: #000000;
 }
 @font-face {
-  font-family: "Orbitron";
-  src: url("/src/assets/fonts/Orbitron-Regular.ttf") format("truetype");
+  font-family: "Alumni_Sans";
+  src: url("/src/assets/fonts/AlumniSansSC-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 ::placeholder {
-  color: #1d2e44;
-  font-size: 13px;
+  color: #5b6777;
+  font-size: 20px;
 }
 ::-webkit-scrollbar {
   background: transparent;
@@ -54,6 +54,8 @@
 ::-webkit-scrollbar-thumb {
   background: var(--bcg-green-dark);
   border-radius: 5px;
+  max-width: 1px;
+  width: 1px;
 }
 
 p,
@@ -77,18 +79,19 @@ p {
   width: 70%;
 }
 input {
-  font-size: 12px;
+  font-size: 20px;
 }
 
 * {
-  font-family: var(--font-orbitron);
+  font-family: var(--font-alumni-sans);
   transition: all 1s;
   text-transform: none;
   font-style: normal;
   outline: none;
+  font-size: 20px;
 }
 body {
-  font-family: var(--font-orbitron);
+  font-family: var(--font-alumni-sans);
   background-color: var(--bcg-dark);
   scroll-behavior: smooth;
 }
@@ -120,11 +123,11 @@ header .logo-img {
   flex-direction: row;
   align-items: center;
   gap: 5%;
-  font-size: 20px;
+  font-size: 30px;
   color: var(--bcg-green-dark);
 
   svg {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
@@ -145,7 +148,7 @@ header .nav-bar .nav-itens {
   gap: 5%;
 
   li {
-    font-size: 13px;
+    font-size: 20px;
     position: relative;
   }
   li:hover {
@@ -200,7 +203,7 @@ header .button-sign {
     gap: 5%;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 20px;
   }
   .login {
     width: 80px;
@@ -227,6 +230,10 @@ header>:last-child{
   header .nav-bar{display: none;}
   header .button-sign{display: none;}
   header>:last-child{display: flex;}
+  .logo-f{
+    width: 150px;
+    height: 40px;
+  }
 }
 
 
@@ -271,7 +278,7 @@ header>:last-child{
   background-color: var(--fundo-letras);
   color: var(--bcg-green-dark);
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 18px;
   animation: move 1s infinite alternate;
 }
 
@@ -297,11 +304,11 @@ header>:last-child{
 }
 
 .hero .container-bcg h1 {
-  font-size: 40px;
+  font-size: 60px;
   text-align: center;
 
   strong {
-    font-size: 50px;
+    font-size: 60px;
     color: var(--bcg-green-dark);
   }
 }
@@ -310,7 +317,7 @@ header>:last-child{
   padding: 5px 0;
   text-align: center;
   width: 70%;
-  font-size: 13px;
+  font-size: 25px;
   font-weight: 500;
 }
 .hero .container-bcg .btnStart {
@@ -320,7 +327,7 @@ header>:last-child{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #16b9a687;
+  background-color: #0c8645;
   border-radius: 5px;
   margin: 2%;
 
@@ -336,7 +343,7 @@ header>:last-child{
 
     i {
       font-weight: 700;
-      color: var(--bcg-green-dark);
+      color: var(--white);
     }
   }
 }
@@ -353,11 +360,11 @@ header>:last-child{
   padding: 100px 5%;
 }
 .us h2 {
-  font-size: 30px;
+  font-size: 40px;
   padding: 10px 0;
 
   i {
-    font-size: 30px;
+    font-size: 40px;
     color: var(--bcg-green-dark);
   }
 }
@@ -367,7 +374,7 @@ header>:last-child{
   height: 35px;
   background-color: var(--bcg-green-dark);
   border-radius: 5px;
-  font-size: 13px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -404,17 +411,18 @@ header>:last-child{
 
   h3 {
     padding: 10px 0;
+    font-family: 22px;
   }
 
   p {
     width: 100%;
     text-align: start;
-    font-size: 12px;
+    font-size: 18px;
     padding-bottom: 20px;
   }
 
   em {
-    font-size: 12px;
+    font-size: 18px;
     padding-bottom: 10px;
     margin-top: 5%;
 
@@ -447,7 +455,7 @@ header>:last-child{
     margin-right: auto;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 15px;
     border-radius: 5px;
     width: auto;
     padding: 0 10px;
@@ -568,7 +576,7 @@ header>:last-child{
 
   p {
     text-align: start;
-    font-size: 12px;
+    font-size: 20px;
     padding-bottom: 10px;
   }
 
@@ -592,7 +600,7 @@ header>:last-child{
 
   em {
     border-top: solid 1px var(--bcg-dark);
-    font-size: 13px;
+    font-size: 20px;
     color: var(--bcg-pink-dark);
     padding: 20px 0 0 0;
     width: 100%;
@@ -683,7 +691,7 @@ header>:last-child{
   }
 
   p{
-    font-size: 12px;
+    font-size: 20px;
     margin: 0;
   }
   em{
@@ -701,7 +709,7 @@ header>:last-child{
     align-items: center;
     justify-content: center;
     gap: 5%;
-    font-size: 13px;
+    font-size: 20px;
   }
 }
 
@@ -751,7 +759,7 @@ form.contact .row-double{
 
     label {
       width: 100%;
-      font-size: 12px;
+      font-size: 20px;
       padding-bottom: 10px;
       display: flex;
       flex-direction: row;
@@ -789,7 +797,7 @@ form.contact .row-double{
       width: 200px;
       height: 35px;
       background-color: var(--bcg-green-dark);
-      font-size: 13px;
+      font-size: 20px;
       border-radius: 5px;
     }
   }
@@ -807,7 +815,7 @@ form.contact button{
   width: 100%;
   height: 40px;
   background-color: var(--bcg-green-dark);
-  font-size: 13px;
+  font-size: 20px;
 }
 
 /*START*/
@@ -830,7 +838,7 @@ form.contact button{
 
   p {
     padding: 10px 0;
-    font-size: 13px;
+    font-size: 20px;
     width: 100%;
     text-align: start;
   }
@@ -845,7 +853,7 @@ form.contact button{
 
     label {
       width: 100%;
-      font-size: 12px;
+      font-size: 20px;
       padding-bottom: 10px;
       display: flex;
       flex-direction: row;
@@ -883,7 +891,7 @@ form.contact button{
       width: 200px;
       height: 35px;
       background-color: var(--bcg-green-dark);
-      font-size: 13px;
+      font-size: 20px;
       border-radius: 5px;
     }
   }
@@ -932,7 +940,7 @@ form.contact button{
   }
 
   em {
-    font-size: 15px;
+    font-size: 25px;
     padding: 10px 0;
     text-align: center;
   }
@@ -1114,11 +1122,11 @@ form.contact button{
   }
 
   h3 {
-    padding: 10px 0;
-    font-size: 20px;
+    padding: 5px 0 1px 0;
+    font-size: 30px;
   }
   p {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .main-form {
@@ -1136,7 +1144,7 @@ form.contact button{
 
       label {
         width: 100%;
-        font-size: 12px;
+        font-size: 20px;
         padding-bottom: 10px;
         display: flex;
         flex-direction: row;
@@ -1148,6 +1156,7 @@ form.contact button{
         }
         .typePass {
           font-size: 10px;
+          font-size: 15px;
         }
       }
 
@@ -1180,7 +1189,7 @@ form.contact button{
       margin-bottom: 2%;
 
       label {
-        font-size: 13px;
+        font-size: 20px;
         cursor: pointer;
 
         i {
@@ -1206,7 +1215,7 @@ form.contact button{
     .changeSign {
       text-align: start;
       margin: 5% 0;
-      font-size: 13px;
+      font-size: 20px;
       gap: 5%;
 
       i {
@@ -1268,7 +1277,7 @@ footer .section-footer {
 }
 
 footer em {
-  font-size: 13px;
+  font-size: 20px;
   padding-top: 10px;
 
   i {
@@ -1299,7 +1308,7 @@ footer em {
 
   p {
     padding: 10px 0;
-    font-size: 13px;
+    font-size: 20px;
     width: auto;
     text-align: start;
   }
@@ -1313,7 +1322,7 @@ footer em {
 
     label {
       width: 100%;
-      font-size: 12px;
+      font-size: 20px;
       padding-bottom: 10px;
       display: flex;
       flex-direction: row;
@@ -1350,7 +1359,7 @@ footer em {
         width: 100px;
         height: 100%;
         background-color: var(--bcg-green-dark);
-        font-size: 13px;
+        font-size: 20px;
         border-radius: 5px;
       }
     }
@@ -1415,7 +1424,7 @@ footer em {
 
     li {
       padding: 10px;
-      font-size: 13px;
+      font-size: 20px;
       cursor: pointer;
     }
     li:hover {

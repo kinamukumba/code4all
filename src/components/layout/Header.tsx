@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from 'next/image';
 import { BiLogIn, BiMenu } from "react-icons/bi";
 import { BsMenuApp } from "react-icons/bs";
 import { FaCode } from "react-icons/fa6";
@@ -8,11 +9,12 @@ export default function Header() {
             document.querySelector('header')?.classList.add('ok');
         }
     })*/
-        
+
     return (
         <>
             <header className="ok">
-                <Link href="/"><div className="logo-img center"><FaCode  /> code4all</div></Link>
+                <Link href="/"><div className="logo-img center"><Image className="logo-f" src="/Logo 3.png" width={200}
+                    height={50} alt="" /></div></Link>
                 <nav className="nav-bar">
                     <ul className="nav-itens">
                         <Link href='#hero'>
@@ -37,14 +39,14 @@ export default function Header() {
                 </nav>
                 <div className="button-sign">
                     <Link href='/login'>
-                       <button className="login"><BiLogIn color="#ffffff"/> Login</button>
+                        <button className="login"><BiLogIn color="#ffffff" /> Login</button>
                     </Link>
                     <Link href='/sign'>
-                       <button>Começar</button>
+                        <button>Começar</button>
                     </Link>
                 </div>
                 <div className="menu">
-                    <BiMenu/>
+                    <BiMenu />
                 </div>
             </header>
 

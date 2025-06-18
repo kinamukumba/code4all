@@ -1,6 +1,6 @@
 // src/components/Loader.tsx
 'use client';
-
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import styles from './Loader.module.css';
 
@@ -17,7 +17,8 @@ export default function Loader() {
   return (
     <div className={styles.loaderContainer}>
       <div className={styles.logoCircle}>
-        <span className={styles.logoText}>code4all</span>
+        <span className={styles.logoText}><Image src="/favicon.png" width={50}
+                                                                    height={50} alt="" /></span>
       </div>
     </div>
   );

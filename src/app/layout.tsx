@@ -1,12 +1,21 @@
 import AOSInitializer from '@/components/aos';
 import '../styles/globals.css'
-import { Orbitron } from 'next/font/google';
+import { Orbitron, Alumni_Sans } from 'next/font/google';
+
 const orbitron = Orbitron({
   subsets: ['latin'],
-  weight: ['400', '500', '700'], // escolhe os pesos que queres
+  weight: ['400', '500', '700'],
   variable: '--font-orbitron',
   display: 'swap',
 });
+
+const alumniSans = Alumni_Sans({
+  subsets: ['latin'],
+  weight: ['400', '700'], // ajusta conforme preferires
+  variable: '--font-alumni-sans',
+  display: 'swap',
+});
+
 
 export const metadata = {
   title: {
@@ -46,7 +55,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-AO">
+    <html lang="pt-AO" className={`${alumniSans.variable}`}>
       <body>
         <AOSInitializer/>
         {children}

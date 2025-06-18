@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from 'next/image';
 import { BiKey, BiVoicemail } from "react-icons/bi";
 import { CgPassword } from "react-icons/cg";
 import { FaCode } from "react-icons/fa";
@@ -10,7 +11,8 @@ export default function Login(){
         <>
             <div className="container-loin center">
                 <section className="form center" data-aos="zoom-in">
-                    <Link href="/"><div className="logo-img center"><FaCode  /> code4all</div></Link>
+                    <Link href="/"><div className="logo-img center"><Image src="/logo_main.png" width={200}
+                                        height={50} alt="" /></div></Link>
                     <h3>Bem-vindo de volta!</h3>
                     <p>Conecte-se a sua conta</p>
                     <form className="main-form">

@@ -13,7 +13,7 @@ export default function Header() {
     return (
         <>
             <header className="ok">
-                <Link href="/"><div className="logo-img center"><Image className="logo-f" src="/Logo 3.png" width={200}
+                <Link href="/"><div className="logo-img center"><Image className="logo-f" src="/logo_main2.png" width={200}
                     height={50} alt="" /></div></Link>
                 <nav className="nav-bar">
                     <ul className="nav-itens">

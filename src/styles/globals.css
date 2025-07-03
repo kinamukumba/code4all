@@ -3,7 +3,7 @@
 .nextjs-portal {
   display: none !important;
 }
-
+/*#00092F*/
 :root {
   /*font*/
   --font-Alumni_Sans: "Alumni_Sans", sans-serif;
@@ -232,7 +232,7 @@ header>:last-child{
   header>:last-child{display: flex;}
   .logo-f{
     width: 150px;
-    height: 40px;
+    height: auto;
   }
 }
 
@@ -306,6 +306,7 @@ header>:last-child{
 .hero .container-bcg h1 {
   font-size: 60px;
   text-align: center;
+  width: 60%;
 
   strong {
     font-size: 60px;
@@ -576,7 +577,7 @@ header>:last-child{
 
   p {
     text-align: start;
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 10px;
   }
 
@@ -589,6 +590,7 @@ header>:last-child{
       display: flex;
       flex-direction: row;
       align-items: center;
+      font-size: 16px;
       gap: 2%;
 
       svg {
@@ -997,10 +999,12 @@ form.contact button{
   /*HERO*/
   .hero .container-bcg h1{
     text-align: center;
+    width: 100%;
+    font-size: 50px;
   }
   .hero .container-bcg p{
       width: 90%;
-      font-size: 15px;
+      font-size: 20px;
   }
   .hero .container-bcg .btnStart{
     width: 60%;

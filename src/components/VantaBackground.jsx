@@ -25,8 +25,8 @@ export default function VantaBackground() {
               minWidth: 50.0,
               scale: 1.0,
               scaleMobile: 1.0,
-              color: 0x099c00,
-              color2: 0x099c00,
+              color: 0x099c09,
+              color2: 0x099c09,
               size: 0.5,
               spacing: 87.0,
               // backgroundColor REMOVIDO
@@ -47,7 +47,7 @@ export default function VantaBackground() {
       id="background"
       style={{
         width: "100%",
-        height: "50vh",
+        height: "0vh",
         position: "absolute",
         top: 0,
         left: 0,

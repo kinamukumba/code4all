@@ -1,5 +1,5 @@
 import AOSInitializer from '@/components/aos';
-import '../styles/globals.css'
+import '../styles/globals.css';
 import { Orbitron, Alumni_Sans } from 'next/font/google';
 
 const orbitron = Orbitron({
@@ -16,18 +16,22 @@ const alumniSans = Alumni_Sans({
   display: 'swap',
 });
 
-
 export const metadata = {
   title: {
     default: 'Code4all',
     template: '%s | code4all',
   },
-  description: 'A Code4All é a maior plataforma de aprendizado de JavaScript em Angola, oferecendo vídeo-aulas práticas, livros digitais, desafios, e uma comunidade ativa para ajudar iniciantes e programadores a dominarem JavaScript do zero ao avançado. Aprenda a programar com conteúdos em português, 100% focados na realidade africana.',
+  description:
+    'A Code4All é a maior plataforma de aprendizado de JavaScript em Angola, oferecendo vídeo-aulas práticas, livros digitais, desafios, e uma comunidade ativa para ajudar iniciantes e programadores a dominarem JavaScript do zero ao avançado. Aprenda a programar com conteúdos em português, 100% focados na realidade africana.',
   keywords: ['Next.js', 'SEO', 'App Router'],
   authors: [{ name: 'Kina João Mukumba' }],
+  icons: {
+    icon: '/favicon.png',
+  },
   openGraph: {
     title: 'code4all',
-    description: 'Aprende JavaScript do zero com aulas, livros e desafios práticos. A maior comunidade JS de Angola! 🇦🇴',
+    description:
+      'Aprende JavaScript do zero com aulas, livros e desafios práticos. A maior comunidade JS de Angola! 🇦🇴',
     url: 'https://code4all.ao',
     siteName: 'code4all',
     images: [
@@ -49,6 +53,7 @@ export const metadata = {
     },
   },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -57,7 +62,7 @@ export default function RootLayout({
   return (
     <html lang="pt-AO" className={`${alumniSans.variable}`}>
       <body>
-        <AOSInitializer/>
+        <AOSInitializer />
         {children}
       </body>
     </html>

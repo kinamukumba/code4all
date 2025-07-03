@@ -51,7 +51,7 @@ const FeedbackSlider = ({classA}:{classA:string}) => {
                             alt="Foto do Perfil"
                             width={50}
                             height={50}
-                            className="rounded-full border-1 border-solid border-gray-300 shadow-lg transition-all duration-300 hover:scale-105"
+                            className="rounded-full"
                         />
                         <span className={styles.span}>
                             <p>Virgílio António</p>
@@ -69,15 +69,59 @@ const FeedbackSlider = ({classA}:{classA:string}) => {
                 <div className={styles.item}>
                     <div className={styles.id}>
                         <Image
-                            src="/user02.jpeg"
+                            src="/user05.jpg"
                             alt="Foto do Perfil"
                             width={50}
                             height={50}
-                            className="rounded-full border-1 border-solid border-gray-300 shadow-lg transition-all duration-300 hover:scale-105"
+                            className="rounded-full"
                         />
                         <span className={styles.span}>
-                            <p>Virgílio António</p>
-                            <p>Front-End Developer</p>
+                            <p>Pedro Barbosa</p>
+                            <p>Fullstack Developer</p>
+                        </span>
+                    </div>
+                    <div className={styles.stars}>
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStarHalf />
+                    </div>
+                </div>
+                <div className={styles.item}>
+                    <div className={styles.id}>
+                        <Image
+                            src="/user06.jpg"
+                            alt="Foto do Perfil"
+                            width={50}
+                            height={50}
+                            className="rounded-full"
+                        />
+                        <span className={styles.span}>
+                            <p>João Mário</p>
+                            <p>Back-End Developer</p>
+                        </span>
+                    </div>
+                    <div className={styles.stars}>
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStarHalf />
+                    </div>
+                </div>
+                <div className={styles.item}>
+                    <div className={styles.id}>
+                        <Image
+                            src="/user05.jpg"
+                            alt="Foto do Perfil"
+                            width={50}
+                            height={50}
+                            className="rounded-full"
+                        />
+                        <span className={styles.span}>
+                            <p>Pedro Barbosa</p>
+                            <p>Fullstack Developer</p>
                         </span>
                     </div>
                     <div className={styles.stars}>
@@ -95,51 +139,7 @@ const FeedbackSlider = ({classA}:{classA:string}) => {
                             alt="Foto do Perfil"
                             width={50}
                             height={50}
-                            className="rounded-full border-1 border-solid border-gray-300 shadow-lg transition-all duration-300 hover:scale-105"
-                        />
-                        <span className={styles.span}>
-                            <p>Virgílio António</p>
-                            <p>Front-End Developer</p>
-                        </span>
-                    </div>
-                    <div className={styles.stars}>
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStarHalf />
-                    </div>
-                </div>
-                <div className={styles.item}>
-                    <div className={styles.id}>
-                        <Image
-                            src="/user02.jpeg"
-                            alt="Foto do Perfil"
-                            width={50}
-                            height={50}
-                            className="rounded-full border-1 border-solid border-gray-300 shadow-lg transition-all duration-300 hover:scale-105"
-                        />
-                        <span className={styles.span}>
-                            <p>Virgílio António</p>
-                            <p>Front-End Developer</p>
-                        </span>
-                    </div>
-                    <div className={styles.stars}>
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStarHalf />
-                    </div>
-                </div>
-                <div className={styles.item}>
-                    <div className={styles.id}>
-                        <Image
-                            src="/user02.jpeg"
-                            alt="Foto do Perfil"
-                            width={50}
-                            height={50}
-                            className="rounded-full border-1 border-solid border-gray-300 shadow-lg transition-all duration-300 hover:scale-105"
+                            className="rounded-full"
                         />
                         <span className={styles.span}>
                             <p>Virgílio António</p>

@@ -3,16 +3,16 @@
 .nextjs-portal {
   display: none !important;
 }
-
+/*#00092F*/
 :root {
   /*font*/
-  --font-orbitron: "Orbitron", sans-serif;
+  --font-Alumni_Sans: "Alumni_Sans", sans-serif;
   /* Cores principais */
-  --green: #145331;
+  --green: #0c8645;
 
   /* Backgrounds escuros */
   --bcg-dark: #111827;
-  --bcg-green-dark: #16b9a5;
+  --bcg-green-dark: #099c09; /*#16b9a5*/
   --bcg-green-darker: #0d2423;
 
   --bcg-blue-dark: #1a3790;
@@ -36,14 +36,14 @@
   --black: #000000;
 }
 @font-face {
-  font-family: "Orbitron";
-  src: url("/src/assets/fonts/Orbitron-Regular.ttf") format("truetype");
+  font-family: "Alumni_Sans";
+  src: url("/src/assets/fonts/AlumniSansSC-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 ::placeholder {
-  color: #1d2e44;
-  font-size: 13px;
+  color: #5b6777;
+  font-size: 20px;
 }
 ::-webkit-scrollbar {
   background: transparent;
@@ -54,6 +54,8 @@
 ::-webkit-scrollbar-thumb {
   background: var(--bcg-green-dark);
   border-radius: 5px;
+  max-width: 1px;
+  width: 1px;
 }
 
 p,
@@ -77,18 +79,143 @@ p {
   width: 70%;
 }
 input {
-  font-size: 12px;
+  font-size: 20px;
 }
 
 * {
-  font-family: var(--font-orbitron);
+  font-family: var(--font-alumni-sans);
   transition: all 1s;
   text-transform: none;
   font-style: normal;
   outline: none;
+  font-size: 20px;
 }
 body {
-  font-family: var(--font-orbitron);
+  font-family: var(--font-alumni-sans);
   background-color: var(--bcg-dark);
   scroll-behavior: smooth;
+}
+
+/*NOT-FOUND*/
+.page-not-found {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 30px;
+    padding: 10px 0;
+  }
+
+  button {
+    width: 300px;
+    height: 40px;
+    background-color: var(--bcg-green-dark);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    border-radius: 5px;
+    margin: 4% 0 2% 0;
+    cursor: pointer;
+  }
+}
+
+/*AUTH CODE*/
+.mainAuthCode {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainAuthCode form {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .logo-img {
+    width: 100%;
+    color: var(--bcg-green-dark);
+    flex-direction: row;
+    gap: 2%;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .row-input {
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0;
+
+    label {
+      width: 100%;
+      font-size: 20px;
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      i {
+        color: var(--bcg-green-dark);
+      }
+      .typePass {
+        font-size: 10px;
+        font-size: 15px;
+      }
+    }
+
+    .input {
+      width: 100%;
+      height: 45px;
+      padding: 0 2%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--fundo-card);
+      border-radius: 5px;
+
+      input {
+        width: 100%;
+        height: 100%;
+        padding: 0 2%;
+        background-color: transparent;
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+    height: 40px;
+    background-color: var(--bcg-green-dark);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    border-radius: 5px;
+    margin: 4% 0 2% 0;
+    cursor: pointer;
+  }
 }

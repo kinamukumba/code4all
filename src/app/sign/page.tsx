@@ -11,7 +11,7 @@ export default function Login(){
         <>
             <div className="container-loin center">
                 <section className="form center" data-aos="zoom-in">
-                    <Link href="/"><div className="logo-img center"><Image src="/logo_main.png" width={200}
+                    <Link href="/"><div className="logo-img center"><Image src="/logo_main.png" width={150}
                                                             height={50} alt="" /></div></Link>
                     <h3>Bem-vindo de volta!</h3>
                     <p>Conecte-se a sua conta</p>

@@ -1,3 +1,4 @@
+'use client';
 import '../../styles/auth/global.css'
 import Link from "next/link";
 import Image from 'next/image';
@@ -18,7 +19,10 @@ export default function Auth() {
                             <BiKey />
                             <input type="text" name="authCode" id="inputCode" placeholder="" />
                         </div>
-                        <button>Verificar</button>
+                        <button onClick={(e)=>{
+                            e.preventDefault();
+                            window.location.href = 'auth/dashboard';
+                        }}>Verificar</button>
                     </div>
                 </form>
             </main>

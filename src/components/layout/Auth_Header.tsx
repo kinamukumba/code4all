@@ -1,8 +1,12 @@
-export default function Auth_Header(){
-    return(
+import { BiMenu } from "react-icons/bi";
+import "../../styles/auth/global.css"
+export default function AuthHeader() {
+    return (
         <>
             <header className="header">
-                <h1>Olá header</h1>
+                <div className="menu">
+                    <BiMenu/>
+                </div>
             </header>
         </>
     );

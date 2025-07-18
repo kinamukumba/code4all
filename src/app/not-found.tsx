@@ -7,7 +7,7 @@ export default function NotFound() {
         <>
             <main className="page-not-found">
                 <Image
-                src="/not-found.png"
+                src="/not-found1.png"
                 alt="Not Found"
                 width={200}
                 height={200}

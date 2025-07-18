@@ -6,6 +6,7 @@ import { FaCode } from "react-icons/fa";
 import { ImSpinner } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
 import { PiPassword } from "react-icons/pi";
+import { BsPhone } from "react-icons/bs";
 export default function Login(){
     return(
         <>
@@ -30,6 +31,15 @@ export default function Login(){
                                 <input type="email" name="signEmail" id="inputEmail" placeholder="seuemaul@exemplo.com"/>
                             </div>
                         </div>
+
+                        <div className="row-input">
+                            <label htmlFor="inputTel">Telefone (WhatsApp)</label>
+                            <div className="input">
+                                <BsPhone/>
+                                <input type="number" name="signTel" id="inputTel" placeholder="999 999 000"/>
+                            </div>
+                        </div>
+
                         <div className="row-input">
                             <label htmlFor="inputPass">Senha <i className="typePass">Use +6 caracters com a mistura de letras, número e símbolos</i></label>
                             <div className="input">

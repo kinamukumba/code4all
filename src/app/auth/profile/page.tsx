@@ -1,11 +1,11 @@
 import AuthHeader from "@/components/layout/Auth_Header";
 
-export default function Message() {
-    return (
+export default function Profile(){
+    return(
         <>
-            <AuthHeader />
+            <AuthHeader/>
             <main className="main-auth-dash">
-                <h1>Message</h1>
+                <h1>PERFIL</h1>
             </main>
         </>
     );
